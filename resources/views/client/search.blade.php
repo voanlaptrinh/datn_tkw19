@@ -88,7 +88,7 @@
                     </div>
                     <div class="col">
                         <div class="p-1"><select class="form-select" name="timework" aria-label="Default select example">
-                                <option selected disabled>Thời gian làm việc</option>
+                                <option selected disabled>Thời gian làm việc1</option>
                                 @foreach ($timework as $item)
                                     <option value="{{ $item->id }}"
                                         {{ isset($request['timework']) ? ($request['timework'] == $item->id ? 'selected' : '') : '' }}>

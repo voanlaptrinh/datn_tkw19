@@ -27,17 +27,18 @@
                                             <input type="text" class="form-control input-custom" name="key"
                                                 id="" placeholder="Tìm kiếm....">
                                         </div>
+                                        <div class="col">
+                                            <div class="p-1"><select class="form-select" name="lever"
+                                                    aria-label="Default select example">
+                                                    <option selected disabled>Trình độ</option>
+                                                    @foreach ($lever as $item)
+                                                        <option value="{{ $item->id }}">{{ $item->label }}
+                                                        </option>
+                                                    @endforeach
+                                                </select></div>
+                                        </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="p-1"><select class="form-select" name="lever"
-                                                aria-label="Default select example">
-                                                <option selected disabled>Trình độ</option>
-                                                @foreach ($lever as $item)
-                                                    <option value="{{ $item->id }}">{{ $item->label }}
-                                                    </option>
-                                                @endforeach
-                                            </select></div>
-                                    </div>
+
                                     <div class="col">
                                         <div class="p-1"><select class="form-select" name="experience"
                                                 aria-label="Default select example">
@@ -78,7 +79,7 @@
                                                 @endforeach
                                             </select></div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-lg-4">
                                         <div class="p-1"><select class="form-select select2" name="skill[]"
                                                 aria-label="Default select example">
                                                 @foreach ($skill as $item)
