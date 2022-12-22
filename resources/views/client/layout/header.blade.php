@@ -17,9 +17,9 @@
                                     data-target="#exampleModallogin">
                                     <i class="lni lni-user"></i>
                                 </a> --}}
-                                <button class="theme-cl fs-lg" data-toggle="modal"
+                                <button class="crs_yuo12 w-auto text-white theme-bg" data-toggle="modal"
                                     data-target="#exampleModalcheckSeeker">
-                                    <i class="lni lni-user"></i>Đăng
+                                    <i class="lni lni-user"></i> Đăng
                                     nhập</button>
                             </li>
                             <li>

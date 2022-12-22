@@ -10,67 +10,28 @@
         <div class="home-banner margin-bottom-0" style="background:#00ab46 url(assets/img/banner-5.jpg) no-repeat;"
             data-overlay="5">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class=" justify-content-center">
                     <div class="col-xl-11 col-lg-12 col-md-12 col-sm-12 col-12">
 
-                        <div class="banner_caption text-center mb-5">
+                        <div class=" row banner_caption text-center mb-5">
                             <h1 class="banner_title ft-bold mb-1">Khám phá hơn 10k+ việc làm</h1>
                             <p class="fs-md ft-medium">Xin chào các bạn, Công việc mơ ước của bạn đang chờ đợi ở thành phố
                                 địa phương của bạn</p>
                         </div>
 
-                        <div class="container">
+                        <div class="w-100">
                             <form action="{{ route('home.search') }}" method="GET">
-                                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 p-3">
-                                    <div class="col test">
+                                <div class="row-cols-2 row-cols-lg-5 g-2 g-lg-3 p-3 d-flex">
+                                    <div class="col-lg-4">
                                         <div class="p-1">
                                             <input type="text" class="form-control input-custom" name="key"
                                                 id="" placeholder="Tìm kiếm....">
                                         </div>
-                                        <div class="col">
-                                            <div class="p-1"><select class="form-select" name="lever"
-                                                    aria-label="Default select example">
-                                                    <option selected disabled>Trình độ</option>
-                                                    @foreach ($lever as $item)
-                                                        <option value="{{ $item->id }}">{{ $item->label }}
-                                                        </option>
-                                                    @endforeach
-                                                </select></div>
-                                        </div>
+                                       
                                     </div>
-
-                                    <div class="col">
-                                        <div class="p-1"><select class="form-select" name="experience"
-                                                aria-label="Default select example">
-                                                <option selected disabled>Kinh nghiệm</option>
-                                                @foreach ($experience as $item)
-                                                    <option value="{{ $item->id }}">{{ $item->label }}
-                                                    </option>
-                                                @endforeach
-                                            </select></div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="p-1"><select class="form-select" name="majors"
-                                                aria-label="Default select example">
-                                                <option selected disabled>Mức lương</option>
-                                                @foreach ($majors as $item)
-                                                    <option value="{{ $item->id }}">{{ $item->label }}
-                                                    </option>
-                                                @endforeach
-                                            </select></div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="p-1"><select class="form-select" name="timework"
-                                                aria-label="Default select example">
-                                                <option selected disabled>Thời gian làm việc</option>
-                                                @foreach ($timework as $item)
-                                                    <option value="{{ $item->id }}">{{ $item->label }}
-                                                    </option>
-                                                @endforeach
-                                            </select></div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="p-1"><select class="form-select" name="profession"
+                                   
+                                    <div class="col-lg-4">
+                                        <div class="p-1"><select class="form-select form-control input-custom" name="profession"
                                                 aria-label="Default select example">
                                                 <option selected disabled>Vị trí ứng tuyển</option>
                                                 @foreach ($profession as $item)
@@ -79,40 +40,23 @@
                                                 @endforeach
                                             </select></div>
                                     </div>
+                                    
                                     <div class="col-lg-4">
-                                        <div class="p-1"><select class="form-select select2" name="skill[]"
-                                                aria-label="Default select example">
-                                                @foreach ($skill as $item)
-                                                    <option value="{{ $item->id }}">
-                                                        {{ $item->label }}
-                                                    </option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="p-1"><select class="form-select select2-location" name="location"
+                                        <div class="p-1">
+                                            <select class="form-select form-control input-custom" name="location"
                                                 aria-label="Default select example">
                                                 <option selected disabled>Địa chỉ</option>
                                                 @foreach ($location as $item)
                                                     <option value="{{ $item->id }}">
                                                         {{ $item->label }}</option>
                                                 @endforeach
-                                            </select></div>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="p-1"><select class="form-select" name="workingform"
-                                                aria-label="Default select example">
-                                                <option selected disabled>Hình thức làm việc</option>
-                                                @foreach ($workingform as $item)
-                                                    <option value="{{ $item->id }}">
-                                                        {{ $item->label }}</option>
-                                                @endforeach
-                                            </select></div>
-                                    </div>
+                                   
                                     <div class="col">
                                         <div class="p-1"><button type="submit"
-                                                class="btn theme-bg text-light">Lọc</button>
+                                                class="btn theme-bg text-light "><h5 class="p-1"><i class="fa fa-search" aria-hidden="true"></i></h5></button>
                                         </div>
                                     </div>
                                 </div>
